@@ -1,9 +1,14 @@
-export function setupCounter(element) {
-  let counter = 0
-  const setCounter = (count) => {
-    counter = count
-    element.innerHTML = `count is ${counter}`
-  }
-  element.addEventListener('click', () => setCounter(counter + 1))
-  setCounter(0)
-}
+import mojs from "@mojs/core";
+
+const bouncyCircle = new mojs.Shape({
+  shape: 'circle',
+  fill: { '#F64040': '#FC46AD' },
+  radius: { 20: 80 },
+  duration: 2000,
+  isYoyo: true,
+  isShowStart: true,
+  easing: 'elastic.inout',
+  repeat: 1,
+});
+
+bouncyCircle.play()
