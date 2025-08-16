@@ -17,3 +17,13 @@
   box-sizing: border-box;
   overflow: visible;
 }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%
+}
+
+body {
+  background-color: #f1e2d7;
+}
